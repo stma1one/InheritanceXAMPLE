@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace InheritanceXAMPLE
+namespace InheritanceXAMPLE.Animal
 {
-    public  class Animals
+    public class Animals
     {
         private string Animaltype;
         private double weight;
@@ -12,23 +12,23 @@ namespace InheritanceXAMPLE
 
         public Animals(string type, double weight, string name)
         {
-            this.Animaltype = type;
+            Animaltype = type;
             this.weight = weight;
             this.name = name;
         }
 
         public Animals(string type)
         {
-            this.weight=0;
-            this.Animaltype = type;
-            this.name=string.Empty;
+            weight = 0;
+            Animaltype = type;
+            name = string.Empty;
         }
 
         public Animals()
         {
-            this.weight = 0;
-            this.Animaltype = string.Empty;
-            this.name = string.Empty;
+            weight = 0;
+            Animaltype = string.Empty;
+            name = string.Empty;
         }
 
 
