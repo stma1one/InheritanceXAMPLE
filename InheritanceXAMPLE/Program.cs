@@ -11,6 +11,18 @@ namespace InheritanceXAMPLE
             //object is the parent of all classes. everything inherates from object...
             //it gives us ToString, and Equals
             object o = new object();
+            object[] objects = { 1,5.8,"shalom",new Tesla(24) };
+            int a = 9;
+            for (int i = 0; i < objects.Length; i++)
+            {
+                if (objects[i] is int)
+                     (objects[i])=((int) objects[i])+9;
+
+            }
+            object o1 = new Tesla(45);
+
+            Tesla s = (Tesla)o1;
+
             
             Vehicle[] vehicles = new Vehicle[3];
             vehicles[0] = new Tesla(24);
@@ -52,7 +64,7 @@ namespace InheritanceXAMPLE
                 //}
 
             }
-
+            #endregion
 
         }
     }
